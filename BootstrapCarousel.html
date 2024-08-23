@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+
+    <!-- Bootstrap CDN Link  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script> -->
+
+    <!-- JQuery CDN Link -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+
+    <style>
+        .carousel-inner > .item > img{
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <br>
+        <div id="carousel" class="carousel slide">
+
+            <!-- carousel indicators -->
+             <ul class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+             </ul>
+    
+             <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Wrapper 1 -->
+                <div class="item active">
+                    <img src="./Images/home-slide-1.jpg" alt="" srcset="" width="100%" height="340">
+                    <div class="carousel-caption">
+                        <h3>Slide 1</h3>
+                        <p>Description 1</p>
+                    </div>
+                </div>
+
+                <!-- Wrapper 2 -->
+                <div class="item">
+                    <img src="./Images/home-slide-2.jpg" alt="" srcset="" width="100%" height="340">
+                    <div class="carousel-caption">
+                        <h3>Slide 2</h3>
+                        <p>Description 2</p>
+                    </div>
+                </div>
+
+                <!-- Wrapper 3 -->
+                <div class="item">
+                    <img src="./Images/home-slide-1.jpg" alt="" srcset="" width="100%" height="340">
+                    <div class="carousel-caption">
+                        <h3>Slide 3</h3>
+                        <p>Description 3</p>
+                    </div>
+                </div>
+                <!-- Wrapper 4 -->
+                <div class="item">
+                    <img src="./Images/home-slide-2.jpg" alt="" srcset="" width="100%" height="340">
+                    <div class="carousel-caption">
+                        <h3>Slide 4</h3>
+                        <p>Description 4</p>
+                    </div>
+                </div>
+                <!-- Wrapper 5 -->
+                <div class="item">
+                    <img src="./Images/home-slide-3.jpg" alt="" srcset="" >
+                    <div class="carousel-caption" width="100%" height="340">
+                        <h3>Slide 5</h3>
+                        <p>Description 5</p>
+                    </div>
+                </div>
+            </div>
+    
+              <!-- Left and Right Control Links -->
+               <a href="#carousel" class="left carosel-control" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               </a>
+               
+               <a href="#carousel" class="right carosel-control" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               </a>
+
+        </div>
+    </div>
+   
+    <br><br>
+    <button class="btn btn-info"><a href="./BootstrapForms.html"
+            style="text-decoration: none; color: black;">Click here to see Bootstrap Forms</a></button>
+</body>
+
+</html>
