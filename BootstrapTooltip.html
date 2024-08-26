@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+
+    <!-- Bootstrap CDN Link  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script> -->
+
+    <!-- JQuery CDN Link -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script> -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Bootstrap Tooltip</h3>
+        <br><br>
+        <a href="#" data-toggle="tooltip" data-placement="top" title="Insert Tip">tooltip</a>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle = "tooltip"]').tooltip();
+        });
+    </script>
+    <br><br>
+    <hr><br><br>
+    <div class="container">
+        <h3>Simple Bootstrap Popover</h3>
+        <a href="#" data-toggle="popover" title="Test Header" data-content="Sample Paragraph" data-placement="right">Popover</a>
+    </div>
+    <div class="container">
+        <h3>Bootstrap Popover with focus effect</h3>
+        <a href="#" data-toggle="popover" title="Test Header" data-content="Sample Paragraph" data-placement="right"
+            data-trigger="focus">Popover</a>
+    </div>
+    <div class="container">
+        <h3>Bootstrap Popover with hover effect</h3>
+        <a href="#" data-toggle="popover" title="Test Header" data-content="Sample Paragraph" data-placement="right"
+            data-trigger="hover">Popover</a>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle = "popover"]').popover();
+        });
+    </script>
+
+
+
+
+
+
+
+    <br><br>
+    <button class="btn btn-info"><a href="./BootstrapScrollspy.html" style="text-decoration: none; color: black;">Click
+            here to see Bootstrap Scrollspy</a></button>
+
+
+</body>
+
+</html>
